@@ -27,7 +27,7 @@
 
   --fg: #ffffff;
   --fg-muted: #b4b4b4;
-  --fg-subtle: #787878;
+  --fg-subtle: #858585;
 
   --accent: #ffffff;
   --accent-hover: #e0e0e0;
@@ -799,7 +799,7 @@ html[data-look='parallel-code'] {
   --fg: #ffffff;
   --fg-muted: #b4b4b4;
   /* Secondary labels remain readable without needing hover or focus. */
-  --fg-subtle: #787878;
+  --fg-subtle: #858585;
   --accent: #ffffff;
   --accent-hover: #e0e0e0;
   --accent-text: #000000;
