@@ -32,7 +32,7 @@ export function IconButton(props: IconButtonProps) {
       style={{
         background: 'transparent',
         border: `1px solid ${theme.border}`,
-        color: theme.fgMuted,
+        color: '#ffffff',
         cursor: 'pointer',
         'border-radius': 'var(--radius-sm)',
         padding: isSm() ? '2px' : '4px',

@@ -2907,6 +2907,7 @@ textarea::placeholder {
 }
 
 .icon-btn {
+  color: #ffffff;
   backdrop-filter: blur(6px);
 }
 

@@ -3,7 +3,7 @@
   <rect width="378" height="84" rx="14" fill="#000000"/>
 
   <!-- Logo icon -->
-  <g stroke="#2ec8ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(20, 14)">
+  <g stroke="#ffffff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" transform="translate(20, 14)">
     <line x1="10" y1="6" x2="10" y2="50"/>
     <line x1="22" y1="6" x2="22" y2="50"/>
     <path d="M30 8 H47 V24 H30"/>
@@ -11,7 +11,7 @@
   </g>
 
   <!-- "Parallel Code" in JetBrains Mono SemiBold (paths from font glyphs) -->
-  <g fill="#2ec8ff" transform="translate(88, 55)">
+  <g fill="#ffffff" transform="translate(88, 55)">
     <!-- P -->
     <path transform="translate(0.0,0) scale(0.034,-0.034)" d="M84 0V730H323Q394 730 446.5 703.0Q499 676 527.5 626.5Q556 577 556 510Q556 443 527.0 393.5Q498 344 446.0 317.0Q394 290 323 290H192V0ZM192 386H323Q379 386 412.5 420.0Q446 454 446 510Q446 566 412.5 600.0Q379 634 323 634H192Z"/>
     <!-- a -->
