@@ -150,7 +150,7 @@ function createWindow() {
     // Paints until the renderer loads, avoiding a white flash. Matches the
     // default Parallel Code background. shortcut: fixed colour, so light-theme users
     // see a dark frame first; read the saved preset here if that matters.
-    backgroundColor: '#080c10',
+    backgroundColor: '#000000',
     webPreferences: {
       preload: path.join(__dirname, '..', 'electron', 'preload.cjs'),
       contextIsolation: true,

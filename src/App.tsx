@@ -18,6 +18,7 @@ import {
   projectPageOpen,
 } from './store/project-pages';
 import '@xterm/xterm/css/xterm.css';
+import './assets/fonts/obel-mono/obel-mono.css';
 import '@fontsource/inter/400.css';
 import '@fontsource/inter/500.css';
 import '@fontsource/inter/600.css';

@@ -2,6 +2,7 @@ import { IPC } from '../../electron/ipc/channels';
 
 /** Well-known monospace fonts used as fallback when system font enumeration is unavailable. */
 export const TERMINAL_FONTS = [
+  'Obel Mono',
   'JetBrains Mono',
   'Fira Code',
   'Cascadia Code',
@@ -14,10 +15,11 @@ export const TERMINAL_FONTS = [
   'Consolas',
 ] as const;
 
-export const DEFAULT_TERMINAL_FONT: string = 'JetBrains Mono';
+export const DEFAULT_TERMINAL_FONT: string = 'Obel Mono';
 
 /** Fonts that ship with programming ligatures (disabled in terminal via CSS). */
 export const LIGATURE_FONTS: ReadonlySet<string> = new Set([
+  'Obel Mono',
   'JetBrains Mono',
   'Fira Code',
   'Cascadia Code',
@@ -27,8 +29,8 @@ export function getTerminalFontFamily(font: string): string {
   return `'${font.replace(/'/g, "\\'")}', monospace`;
 }
 
-/** Fonts shipped with the app (via @fontsource) — always available regardless of local install. */
-const BUNDLED_FONTS: ReadonlySet<string> = new Set(['JetBrains Mono']);
+/** Fonts shipped with the app (via @fontsource or local assets) — always available regardless of local install. */
+const BUNDLED_FONTS: ReadonlySet<string> = new Set(['Obel Mono', 'JetBrains Mono']);
 
 /**
  * Returns monospace fonts available on this system.

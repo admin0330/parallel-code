@@ -28,8 +28,8 @@ export interface LookPresetOption {
 export const LOOK_PRESETS: LookPresetOption[] = [
   {
     id: 'parallel-code',
-    label: 'Parallel Code',
-    description: 'Website-inspired blue-black surfaces, soft cyan accents, and pale text',
+    label: 'Parallel Code (Black & White)',
+    description: 'Black & white monochrome aesthetic with Obel Mono typeface',
     tone: 'dark',
   },
   {

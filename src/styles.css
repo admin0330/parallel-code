@@ -2,11 +2,11 @@
 /* Fonts are bundled locally via @fontsource — see src/App.tsx for the imports. */
 
 :root {
-  --font-ui: 'Sora', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Space Grotesk', 'Sora', sans-serif;
+  --font-ui: 'Obel Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Obel Mono', sans-serif;
   --font-mono:
-    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    monospace;
+    'Obel Mono', 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    'Liberation Mono', monospace;
 
   /* Motion timing; see the Motion section in AGENTS.md. Fast is direct
      feedback (hover, press, focus); enter animates what appears. */
@@ -14,44 +14,44 @@
   --motion-enter: 180ms;
   --ease-out: cubic-bezier(0.2, 0, 0, 1);
 
-  --bg: radial-gradient(120% 120% at 20% 0%, #253848 0%, #151d26 55%, #101418 100%);
-  --bg-elevated: #1c2630;
-  --bg-input: #1a232e;
-  --bg-hover: #253240;
-  --bg-selected: #1c3e55;
-  --bg-selected-subtle: #1c3e5540;
+  --bg: #000000;
+  --bg-elevated: #111111;
+  --bg-input: #080808;
+  --bg-hover: #1c1c1c;
+  --bg-selected: #242424;
+  --bg-selected-subtle: #161616;
 
-  --border: #2e3e50;
-  --border-subtle: #222e3a;
-  --border-focus: #2ec8ff;
+  --border: #2c2c2c;
+  --border-subtle: #1a1a1a;
+  --border-focus: #ffffff;
 
-  --fg: #d7e4f0;
-  --fg-muted: #9bb0c3;
-  --fg-subtle: #7990a4;
+  --fg: #ffffff;
+  --fg-muted: #b4b4b4;
+  --fg-subtle: #787878;
 
-  --accent: #2ec8ff;
-  --accent-hover: #59d7ff;
-  --accent-text: #031018;
-  --link: #73dfff;
+  --accent: #ffffff;
+  --accent-hover: #e0e0e0;
+  --accent-text: #000000;
+  --link: #ffffff;
 
-  --success: #2fd198;
-  --error: #ff5f73;
-  --warning: #ffc569;
+  --success: #e0e0e0;
+  --error: #ffffff;
+  --warning: #cccccc;
   /* Secondary semantic hues: "ready for review" and neutral-informational
      (steps, sub-task states). Kept off the accent so they stay distinguishable
      from "active". */
-  --review: #c084fc;
-  --info: #60a5fa;
-  --diff-add-bg: rgba(47, 209, 152, 0.1);
-  --diff-remove-bg: rgba(255, 95, 115, 0.1);
-  --search-match: #ffd54f;
-  --search-match-active: #ff8a00;
+  --review: #d0d0d0;
+  --info: #aaaaaa;
+  --diff-add-bg: rgba(255, 255, 255, 0.12);
+  --diff-remove-bg: rgba(255, 255, 255, 0.05);
+  --search-match: #333333;
+  --search-match-active: #ffffff;
 
-  --island-bg: #192028;
-  --island-border: #2e3e50;
+  --island-bg: #0a0a0a;
+  --island-border: #222222;
   --island-radius: 12px;
-  --task-container-bg: #151e28;
-  --task-panel-bg: #1c2630;
+  --task-container-bg: #000000;
+  --task-panel-bg: #0a0a0a;
 
   /* A thin line with a soft inner glow marks the focused pane without the
      weight of a 2px frame. Both are inset shadows, so the pane's own clip
@@ -62,7 +62,7 @@
     inset 0 0 14px -6px color-mix(in srgb, var(--border-focus) 55%, transparent);
   --pane-focus-radius: 4px;
 
-  --shadow-soft: 0 14px 30px rgba(0, 0, 0, 0.28);
+  --shadow-soft: 0 14px 30px rgba(0, 0, 0, 0.6);
   --shadow-pop:
     0 0 0 1px color-mix(in srgb, var(--accent) 25%, transparent),
     0 14px 36px color-mix(in srgb, var(--accent) 16%, transparent);
@@ -93,7 +93,7 @@ body,
   overflow: hidden;
   /* Painted before data-look is applied; matches the default Parallel Code
      --bg and the BrowserWindow backgroundColor in electron/main.ts. */
-  background: #080c10;
+  background: #000000;
 }
 
 body {
@@ -781,50 +781,49 @@ body:has(
   border-color: color-mix(in srgb, var(--fg-subtle) 26%, transparent);
 }
 
-/* Parallel Code website palette: parallelcode.app. */
+/* Black & White monochrome palette with Obel Mono */
 html[data-look='parallel-code'] {
   color-scheme: dark;
-  --font-ui: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-  --font-display: 'Sora', var(--font-ui);
-  --bg: #080c10;
-  /* Menus and dialogs sit a step above the #10161c panels so they lift off them. */
-  --bg-elevated: #161e26;
-  --bg-input: #0c1218;
-  --bg-hover: #1b252f;
-  --bg-selected: #18343e;
-  --bg-selected-subtle: #11232c;
-  --border: #394752;
-  --border-subtle: #2b3741;
-  --border-focus: #67d9ed;
-  --fg: #f0f4f7;
-  --fg-muted: #c5ced7;
+  --font-ui: 'Obel Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  --font-display: 'Obel Mono', var(--font-ui);
+  --bg: #000000;
+  /* Menus and dialogs sit a step above the #0a0a0a panels so they lift off them. */
+  --bg-elevated: #111111;
+  --bg-input: #080808;
+  --bg-hover: #1c1c1c;
+  --bg-selected: #242424;
+  --bg-selected-subtle: #161616;
+  --border: #2c2c2c;
+  --border-subtle: #1a1a1a;
+  --border-focus: #ffffff;
+  --fg: #ffffff;
+  --fg-muted: #b4b4b4;
   /* Secondary labels remain readable without needing hover or focus. */
-  --fg-subtle: #a0afbd;
-  --accent: #67d9ed;
-  --accent-hover: #91e5f3;
-  --accent-text: #080c10;
-  --link: #67d9ed;
-  --success: #98c9ae;
-  --error: #f08f8a;
-  --warning: #dfba83;
-  --review: #c1b0e8;
-  /* Periwinkle rather than cyan, so info never reads as the accent. */
-  --info: #9db3e6;
-  --diff-add-bg: rgba(152, 201, 174, 0.12);
-  --diff-remove-bg: rgba(240, 143, 138, 0.12);
-  --search-match: #dfba83;
-  --search-match-active: #efa66f;
-  --island-bg: #10161c;
-  --island-border: #29343d;
+  --fg-subtle: #787878;
+  --accent: #ffffff;
+  --accent-hover: #e0e0e0;
+  --accent-text: #000000;
+  --link: #ffffff;
+  --success: #e0e0e0;
+  --error: #ffffff;
+  --warning: #cccccc;
+  --review: #d0d0d0;
+  --info: #aaaaaa;
+  --diff-add-bg: rgba(255, 255, 255, 0.12);
+  --diff-remove-bg: rgba(255, 255, 255, 0.05);
+  --search-match: #333333;
+  --search-match-active: #ffffff;
+  --island-bg: #0a0a0a;
+  --island-border: #222222;
   --island-radius: 12px;
-  --task-container-bg: #0e141a;
-  --task-panel-bg: #13191f;
-  --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.16);
-  --shadow-pop: 0 16px 48px rgba(0, 0, 0, 0.45);
+  --task-container-bg: #000000;
+  --task-panel-bg: #0a0a0a;
+  --shadow-soft: 0 4px 16px rgba(0, 0, 0, 0.6);
+  --shadow-pop: 0 16px 48px rgba(0, 0, 0, 0.9);
 }
 
 .app-shell[data-look='parallel-code']::before {
-  background: radial-gradient(ellipse at 50% 0%, #16485b33, transparent 60%);
+  background: radial-gradient(ellipse at 50% 0%, rgba(255, 255, 255, 0.03), transparent 60%);
 }
 
 /* Compact UI text, geometric headings, and relaxed prose form three clear levels. */
